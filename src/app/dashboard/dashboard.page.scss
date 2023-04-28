@@ -1,0 +1,53 @@
+.dashboardtoolbar{
+    --background: var(--ion-toolbar-background, var(--ion-color-step-50, #222222));
+}
+ion-title{
+    --color: #CCFF00;
+}
+ion-content{
+    --ion-background-color:#222222;
+}
+.iconColour{
+    color: #CCFF00;
+    font-size: 12;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.dashboardsegment{
+    --ion-background-color:#222222;
+    height: 8%;
+}
+.qrcodestyle{
+    display: flex; 
+    justify-content: center; 
+    align-content: center;
+    position: relative;
+    top: 30%;
+}
+.shareButton{
+    display: flex; 
+    justify-content: center; 
+    align-content: center;
+    position: relative;
+    top: 30%;
+    padding-top: 20px;
+    
+}
+.shareButtonIcon{
+    font-size: 30px;
+    color: #CCFF00;
+}
+.inputbox{
+    --color: #CCFF00;
+    --border-color: #CCFF00;
+    --background-hover: #CCFF00;
+    --background-activated: #CCFF00;
+    --background-focused: #CCFF00;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.scannerButton{
+    position: relative;
+    top: 100%;
+    --background: #CCFF00;
+    --color: #222222;
+}

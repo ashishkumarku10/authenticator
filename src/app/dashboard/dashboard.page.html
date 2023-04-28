@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar class="dashboardtoolbar">
+    <ion-title>Welcome to Authenticator</ion-title>
+    <ion-button slot="end" fill="clear" (click)="logout()" class="logoutButton">
+      <ion-icon name="log-out-outline" class="iconColour"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="type">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item class="inputbox">
+            <ion-input type="text" placeholder="Do you wanna generate your QR Code !" [(ngModel)]="qrData" ></ion-input>
+            <ion-button full icon-left (click)="createQRCode()" slot="end" fill="clear">
+              Generate
+            </ion-button>
+          </ion-item>  
+        </ion-col>
+      </ion-row>
+
+      <ion-row style="padding-bottom: 150px; padding-top: 100px;">
+        <ion-col>
+          <ngx-qrcode
+            [elementType]="elementType"
+            [errorCorrectionLevel]="correctionLevel"
+            [value]="createdCode"
+            cssClass="bshadow" class="qrcodestyle"></ngx-qrcode>
+          <div class="shareButton" *ngIf="createdCode != ''"><ion-icon name="share-social-outline" class="shareButtonIcon" (click)="shareQRCode()"></ion-icon></div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" (click)="scanQRCode()" class="scannerButton">Scan QR Code</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

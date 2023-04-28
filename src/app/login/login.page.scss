@@ -1,0 +1,45 @@
+ion-content{
+    --ion-background-color:#222222;
+}
+
+.cardconatiner{    
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    top: 20%;
+}
+.headtitle{
+    font-size: 24px; 
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: bolder; 
+    color: #CCFF00;
+    text-align: center;
+}
+.notetitle{
+    font-size: 16px; 
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: bolder; 
+    color: #CCFF00;
+    text-align: center;
+}
+#ionButton{
+    font-size: 16px; 
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: bolder; 
+    --color: #222222;
+    text-align: center;
+    margin-top: 15%;
+}
+
+ion-button {
+    --background: #CCFF00;
+}
+.inputbox{
+    padding-top: 20px;
+    --color: #CCFF00;
+    --border-color: #CCFF00;
+    --background-hover: #CCFF00;
+    --background-activated: #CCFF00;
+    --background-focused: #CCFF00;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
